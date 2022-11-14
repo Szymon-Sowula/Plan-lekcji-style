@@ -1,0 +1,186 @@
+@media screen and (min-width: 700px) {
+	.grider {
+		display: none !important;
+	}
+}
+@media screen and (max-width: 700px) {
+	table table {
+		display: none;
+	}
+
+	.grider {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+
+	.grider div:empty {
+		/*display: none;*/
+	}
+	.grider div {
+		display: flex;
+		justify-content: flex-end;
+		flex-wrap: wrap;
+		margin: 0;
+		padding: 0;
+	}
+
+	.grider div:nth-child(7n + 1),
+	.grider div:nth-child(7n + 2) {
+		display: none;
+	}
+	.old-th {
+		font-size: 19px;
+	}
+
+	.grider div:nth-child(7n + 1) {
+		order: 1;
+	}
+	.grider div:nth-child(7n + 2) {
+		order: 2;
+	}
+	.grider div:nth-child(7n + 3) {
+		order: 3;
+	}
+	.grider div:nth-child(7n + 4) {
+		order: 4;
+	}
+	.grider div:nth-child(7n + 5) {
+		order: 5;
+	}
+	.grider div:nth-child(7n + 6) {
+		order: 6;
+	}
+	.grider div:nth-child(7n) {
+		order: 7;
+	}
+
+	.grider time {
+		width: 25%;
+	}
+	.grider article {
+		display: flex;
+		width: 75%;
+	}
+	.grider article .n {
+		flex-grow: 0;
+		flex-basis: 20%;
+		text-align: center;
+	}
+	.grider article .s {
+		flex-basis: 20%;
+		flex-grow: 0;
+		text-align: center;
+	}
+	.grider article .p {
+		flex-grow: 6;
+		text-align: right;
+	}
+
+	.grider {
+		font-family: Garamond, sans-serif;
+		font-weight: 500;
+	}
+	.old-th time {
+		display: none;
+	}
+	.old-th article {
+		/*background-color: red;*/
+		padding-top: 20px;
+		display: block;
+		text-align: right;
+		padding-right: 20px;
+		font-size: 1.75rem;
+		line-height: 3rem;
+	}
+	.grider time {
+		color: #aaa;
+		font-style: italic;
+	}
+	.old-td + .old-td {
+		border-top: 1px solid #ddd;
+		font-size: 1.2rem;
+		line-height: 1.75rem;
+	}
+}
+
+/* some minor tweaks */
+caption {
+	text-align: center;
+	width: 100%;
+	color: #fff;
+	text-shadow: 0 0 15px rgb(0, 0, 0), 0 0 40px rgb(34, 25, 25), 0 0 210px #fff;
+	padding-bottom: 20px;
+}
+form {
+	min-width: 300px;
+	margin: auto;
+	width: 50vw;
+	text-align: center;
+}
+body > div > table {
+	width: 100%;
+}
+body > div > table table {
+	margin: auto;
+}
+
+/* Only as example */
+.n {
+	color: rgb(236, 240, 9);
+	text-decoration: none;
+	text-align: right;
+}
+* {
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body {
+	background: rgb(2, 0, 36);
+	background: linear-gradient(90deg, rgba(2, 0, 36, 0.4) 0%, rgba(9, 9, 121, 0.4) 61%, rgba(0, 212, 255, 0.4) 100%);
+	padding-top: 50px;
+}
+.tabela {
+	box-shadow: 0 0 0.6rem #fff, 0 0 0.6rem #fff, 0 0 4rem darkblue, 0 0 1.2rem darkblue, 0 0 3.5rem darkblue,
+		inset 0 0 0.3rem darkblue;
+
+	border: 1px solid;
+	color: #0093e9;
+	color: radial-gradient(radial, rgb(235, 5, 105) 0%, rgba(148, 187, 233, 1) 100%);
+	background: rgb(68, 137, 221);
+	background: linear-gradient(90deg, rgba(68, 137, 221, 0.7679446778711485) 3%, rgba(14, 85, 172, 1) 100%);
+	text-align: center;
+	cursor: pointer;
+	font-style: italic;
+}
+tbody {
+	color: RGB(146, 168, 209);
+}
+caption:hover {
+	transform: translateY(0) scale(1.2);
+}
+tr {
+	color: aliceblue;
+}
+tr:hover {
+	color: #fff;
+	transform: translateY(0) scale(1.01);
+}
+.o {
+	color: red;
+}
+.s {
+	color: red;
+}
+.l:hover {
+	-webkit-transform: scale(1.05);
+	transform: scale(1.06);
+}
+div.old-td {
+	color: aliceblue;
+}
+select {
+	border: 0.13rem solid;
+	border-color: rgb(68, 137, 221);
+	border-color: linear-gradient(90deg, rgba(68, 137, 221, 0.7679446778711485) 3%, rgba(14, 85, 172, 1) 100%);
+	border-radius: 30px;
+}
