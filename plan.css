@@ -127,7 +127,7 @@ body > div > table table {
 
 /* Only as example */
 .n {
-	color: rgb(236, 240, 9);
+	color: rgb(38, 0, 255);
 	text-decoration: none;
 	text-align: right;
 }
@@ -166,10 +166,10 @@ tr:hover {
 	transform: translateY(0) scale(1.01);
 }
 .o {
-	color: red;
+	color: rgb(71, 71, 71);
 }
 .s {
-	color: red;
+	color: rgb(71, 71, 71);
 }
 .l:hover {
 	-webkit-transform: scale(1.05);
